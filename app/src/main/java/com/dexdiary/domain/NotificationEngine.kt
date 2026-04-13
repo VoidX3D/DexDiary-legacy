@@ -10,42 +10,54 @@ sealed class NotificationMessage(val title: String, val body: String)
 @Singleton
 class NotificationEngine @Inject constructor() {
 
-    private val morningReminders = listOf(
-        Pair("🌅 New Day, New Log", "Your morning coffee is ready, and so is your diary."),
-        Pair("☀️ Rise and Write", "Log your intentions for today!"),
-        Pair("☕ Fresh Canvas", "A new day awaits your thoughts."),
-        Pair("🌄 Morning Glory", "Did you dream of success? Write it down."),
-        Pair("🐤 Early Bird Gets the Pts", "Log now for an early bird bonus!"),
-        Pair("🌞 Awake yet?", "Your diary is lonelier than your inbox.")
+    private val openers = listOf("Hey!", "Wait,", "Excuse me?", "Psst...", "Listen,", "Attention!")
+    
+    private val morningCore = listOf(
+        "the sun is up and your diary is empty.",
+        "it's time to log your morning intentions.",
+        "don't let your morning coffee be the only productive thing you do today.",
+        "a new canvas awaits your thoughts."
     )
 
-    private val nightReminders = listOf(
-        Pair("🌙 Day in Review", "How was today? Don't let the memories fade."),
-        Pair("🛌 Bedtime Thoughts", "Unburden your mind before sleep."),
-        Pair("🌌 Starry Night", "Log your final thoughts for today."),
-        Pair("🦉 Night Owl?", "Perfect time for some deep reflection."),
-        Pair("💤 Sleep Well", "But write first. Your future self will thank you."),
-        Pair("📖 Chapter Closed", "Ready to write the end of today's chapter?")
+    private val nightCore = listOf(
+        "the day is ending. How was it?",
+        "reflect on today before the memories fade.",
+        "your future self wants to know what happened today.",
+        "unburden your mind before you sleep."
     )
 
-    private val desperateReminders = listOf(
-        Pair("🔥 STREAK AT RISK!", "Duolingo style: Write now or say goodbye to your fire!"),
-        Pair("⚠️ 1 HOUR LEFT", "Your streak is begging for an entry."),
-        Pair("💀 DON'T STOP NOW", "You've come so far. Don't let it end today."),
-        Pair("😡 I'M DISAPPOINTED", "Is a 5-minute entry really too much to ask?"),
-        Pair("💔 STREAK SUICIDE?", "Don't let your hard work go to waste."),
-        Pair("🚨 EMERGENCY", "Your fire is flickering out. SAVE IT NOW."),
-        Pair("🔪 STREAK ON THE EDGE", "One more hour and the fire dies. Your choice."),
-        Pair("🎭 DRAMA!", "Your streak is literally crying in the corner right now.")
+    private val desperateCore = listOf(
+        "your streak is literally dying.",
+        "don't let your fire go out now.",
+        "is 30 seconds of writing really that hard?",
+        "you've worked too hard to lose it all now."
+    )
+
+    private val suffixes = listOf(
+        "Write now.",
+        "Don't wait.",
+        "Just one sentence.",
+        "Go go go!",
+        "Accountability is key.",
+        "Your streak depends on it.",
+        "Make it happen."
     )
 
     fun getTimelyNotification(stats: UserStats): Pair<String, String> {
         val now = LocalTime.now()
+        val opener = openers.random()
+        val suffix = suffixes.random()
         
         return when {
-            stats.currentStreak >= 3 && now.hour >= 21 -> desperateReminders.random()
-            now.hour < 12 -> morningReminders.random()
-            else -> nightReminders.random()
+            stats.currentStreak >= 3 && now.hour >= 21 -> {
+                Pair("🚨 EMERGENCY", "$opener ${desperateCore.random()} $suffix")
+            }
+            now.hour < 12 -> {
+                Pair("🌅 Morning Ritual", "$opener ${morningCore.random()} $suffix")
+            }
+            else -> {
+                Pair("🌙 Nightly Reflection", "$opener ${nightCore.random()} $suffix")
+            }
         }
     }
 }
