@@ -41,9 +41,10 @@ class ShopViewModel @Inject constructor(
         val currentStats = stats.value
         if ((currentStats?.availablePoints ?: 0) >= cost) {
             viewModelScope.launch {
-                statsRepository.updateStats(currentStats.copy(
-                    availablePoints = (currentStats?.availablePoints ?: 0) - cost
-                ))
+                if (currentStats != null) {
+                    statsRepository.updateStats(currentStats.copy(
+                        availablePoints = (currentStats.availablePoints) - cost
+                    ))
 
                 if (isPermanent) {
                     shopRepository.unlockTheme(UnlockedTheme(
@@ -62,6 +63,7 @@ class ShopViewModel @Inject constructor(
                             purchasedAt = System.currentTimeMillis()
                         ))
                     }
+                }
                 }
             }
         }

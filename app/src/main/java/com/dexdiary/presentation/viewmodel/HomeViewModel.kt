@@ -67,10 +67,12 @@ class HomeViewModel @Inject constructor(
             rewardRepository.insertReward(DailyReward(today, System.currentTimeMillis(), type, amount))
             
             val statsVal = stats.value
-            if (type == "points") {
-                statsRepository.updateStats(statsVal.copy(availablePoints = statsVal.availablePoints + amount))
-            } else if (type == "freeze") {
-                // TODO: Update inventory
+            if (statsVal != null) {
+                if (type == "points") {
+                    statsRepository.updateStats(statsVal.copy(availablePoints = statsVal.availablePoints + amount))
+                } else if (type == "freeze") {
+                    // TODO: Update inventory
+                }
             }
             
             _dailyRewardClaimed.value = true
@@ -79,7 +81,7 @@ class HomeViewModel @Inject constructor(
 
     fun isTodayMissed(): Boolean {
         val today = LocalDate.now().format(formatter)
-        val lastEntry = stats.value.lastEntryDate
+        val lastEntry = stats.value?.lastEntryDate
         return lastEntry != today
     }
 
