@@ -19,6 +19,8 @@ class StatsRepository @Inject constructor(
 
     suspend fun updateStats(stats: UserStats) = statsDao.updateStats(stats)
 
+    suspend fun upsertStats(stats: UserStats) = statsDao.upsertStats(stats)
+
     suspend fun insertStats(stats: UserStats) = statsDao.insertStats(stats)
 
     fun getAllTransactions(): Flow<List<PointTransaction>> = transactionDao.getAllTransactions()

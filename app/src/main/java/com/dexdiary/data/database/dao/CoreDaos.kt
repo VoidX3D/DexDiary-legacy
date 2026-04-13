@@ -36,4 +36,7 @@ interface StatsDao {
 
     @Update
     suspend fun updateStats(stats: UserStats)
+
+    @Upsert
+    suspend fun upsertStats(stats: UserStats)
 }

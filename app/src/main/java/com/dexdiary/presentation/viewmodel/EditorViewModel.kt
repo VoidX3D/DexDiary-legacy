@@ -130,7 +130,7 @@ class EditorViewModel @Inject constructor(
                 val newTotalPoints = stats.totalPoints + earnedPoints
                 val newAvailablePoints = stats.availablePoints + earnedPoints
                 
-                statsRepository.updateStats(stats.copy(
+                statsRepository.upsertStats(stats.copy(
                     totalPoints = newTotalPoints,
                     availablePoints = newAvailablePoints,
                     currentStreak = newStreak,
