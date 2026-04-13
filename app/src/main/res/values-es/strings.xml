@@ -1,130 +1,130 @@
 <resources>
     <!-- App General -->
     <string name="app_name">Dex Diary</string>
-    <string name="tagline">Your life, logged.</string>
+    <string name="tagline">Tu vida, registrada.</string>
 
     <!-- Home Screen -->
-    <string name="home_streak">Streak</string>
-    <string name="home_points">Points</string>
-    <string name="home_freezes">Freezes</string>
-    <string name="home_write_today">Write Today's Entry</string>
-    <string name="home_today">Today</string>
-    <string name="home_yesterday">Yesterday</string>
-    <string name="home_locked">Locked</string>
-    <string name="home_unlock_with_excuse">Unlock with Excuse</string>
-    <string name="home_use_freeze">Use Freeze</string>
-    <string name="home_read_only">Read only</string>
-    <string name="home_no_entries">No entries yet. Write your first one!</string>
+    <string name="home_streak">Racha</string>
+    <string name="home_points">Puntos</string>
+    <string name="home_freezes">Congelaciones</string>
+    <string name="home_write_today">Escribir entrada de hoy</string>
+    <string name="home_today">Hoy</string>
+    <string name="home_yesterday">Ayer</string>
+    <string name="home_locked">Bloqueado</string>
+    <string name="home_unlock_with_excuse">Desbloquear con excusa</string>
+    <string name="home_use_freeze">Usar congelación</string>
+    <string name="home_read_only">Solo lectura</string>
+    <string name="home_no_entries">Aún no hay entradas. ¡Escribe la primera!</string>
 
     <!-- Editor Screen -->
-    <string name="editor_title">Title</string>
-    <string name="editor_mood">Mood</string>
-    <string name="editor_tags">Tags (space or comma separated)</string>
-    <string name="editor_content">Write your entry here...</string>
-    <string name="editor_save">Save</string>
-    <string name="editor_delete">Delete</string>
-    <string name="editor_delete_confirm">Are you sure you want to delete this entry?</string>
-    <string name="editor_auto_saved">Auto-saved</string>
-    <string name="editor_word_count">words</string>
-    <string name="editor_char_count">chars</string>
-    <string name="editor_reading_time">min read</string>
-    <string name="editor_preview">Preview</string>
-    <string name="editor_raw">Raw</string>
+    <string name="editor_title">Título</string>
+    <string name="editor_mood">Ánimo</string>
+    <string name="editor_tags">Etiquetas</string>
+    <string name="editor_content">Escribe tu entrada aquí...</string>
+    <string name="editor_save">Guardar</string>
+    <string name="editor_delete">Eliminar</string>
+    <string name="editor_delete_confirm">¿Estás seguro de que quieres eliminar esta entrada?</string>
+    <string name="editor_auto_saved">Auto-guardado</string>
+    <string name="editor_word_count">palabras</string>
+    <string name="editor_char_count">caracteres</string>
+    <string name="editor_reading_time">min de lectura</string>
+    <string name="editor_preview">Vista previa</string>
+    <string name="editor_raw">Crudo</string>
 
     <!-- Points Dashboard -->
-    <string name="points_total">Total Points</string>
-    <string name="points_next_milestone">Next Milestone</string>
-    <string name="points_dark_mode_goal">Dark Mode Unlock</string>
-    <string name="points_today_potential">Today's Potential</string>
-    <string name="points_today_breakdown">Today's Breakdown</string>
-    <string name="points_base_entry">Base entry</string>
-    <string name="points_word_bonus">Word bonus</string>
-    <string name="points_image_bonus">Image bonus</string>
-    <string name="points_audio_bonus">Audio bonus</string>
-    <string name="points_location_bonus">Location bonus</string>
-    <string name="points_multiplier">Streak multiplier</string>
-    <string name="points_total_with_multiplier">Total with multiplier</string>
-    <string name="points_recent_activity">Recent Activity</string>
-    <string name="points_streak_progress">Streak Progress</string>
-    <string name="points_next_streak_bonus">Next streak bonus</string>
+    <string name="points_total">Puntos Totales</string>
+    <string name="points_next_milestone">Próximo Hito</string>
+    <string name="points_dark_mode_goal">Desbloqueo de Modo Oscuro</string>
+    <string name="points_today_potential">Potencial de Hoy</string>
+    <string name="points_today_breakdown">Desglose de Hoy</string>
+    <string name="points_base_entry">Entrada base</string>
+    <string name="points_word_bonus">Bono de palabras</string>
+    <string name="points_image_bonus">Bono de imagen</string>
+    <string name="points_audio_bonus">Bono de audio</string>
+    <string name="points_location_bonus">Bono de ubicación</string>
+    <string name="points_multiplier">Multiplicador de racha</string>
+    <string name="points_total_with_multiplier">Total con multiplicador</string>
+    <string name="points_recent_activity">Actividad Reciente</string>
+    <string name="points_streak_progress">Progreso de Racha</string>
+    <string name="points_next_streak_bonus">Próximo bono de racha</string>
 
     <!-- Shop Screen -->
-    <string name="shop_title">Shop</string>
-    <string name="shop_points_balance">Points Balance</string>
-    <string name="shop_streak_protection">Streak Protection</string>
-    <string name="shop_themes">Themes</string>
-    <string name="shop_powerups">Power-Ups</string>
-    <string name="shop_badges">Badges</string>
-    <string name="shop_buy">Buy</string>
-    <string name="shop_rent">Rent for 7 days</string>
-    <string name="shop_purchase_confirm">Buy {item} for {cost} points?</string>
-    <string name="shop_rent_confirm">Rent {item} for 7 days for {cost} points?</string>
-    <string name="shop_not_enough_points">Not enough points</string>
-    <string name="shop_purchase_success">Purchase successful!</string>
-    <string name="shop_dark_mode_progress">Points until Dark Mode</string>
+    <string name="shop_title">Tienda</string>
+    <string name="shop_points_balance">Saldo de Puntos</string>
+    <string name="shop_streak_protection">Protección de Racha</string>
+    <string name="shop_themes">Temas</string>
+    <string name="shop_powerups">Potenciadores</string>
+    <string name="shop_badges">Insignias</string>
+    <string name="shop_buy">Comprar</string>
+    <string name="shop_rent">Alquilar por 7 días</string>
+    <string name="shop_purchase_confirm">¿Comprar %1$s por %2$d puntos?</string>
+    <string name="shop_rent_confirm">¿Alquilar %1$s por 7 días por %2$d puntos?</string>
+    <string name="shop_not_enough_points">No hay suficientes puntos</string>
+    <string name="shop_purchase_success">¡Compra exitosa!</string>
+    <string name="shop_dark_mode_progress">Puntos para el Modo Oscuro</string>
 
     <!-- Calendar Screen -->
-    <string name="calendar_title">Calendar</string>
-    <string name="calendar_entry_dot">Has entry</string>
+    <string name="calendar_title">Calendario</string>
+    <string name="calendar_entry_dot">Tiene entrada</string>
 
     <!-- Search Screen -->
-    <string name="search_title">Search</string>
-    <string name="search_hint">Search entries...</string>
-    <string name="search_filter_all">All</string>
-    <string name="search_filter_this_month">This Month</string>
-    <string name="search_filter_this_year">This Year</string>
-    <string name="search_filter_has_media">Has Media</string>
-    <string name="search_no_results">No entries found</string>
+    <string name="search_title">Buscar</string>
+    <string name="search_hint">Buscar entradas...</string>
+    <string name="search_filter_all">Todo</string>
+    <string name="search_filter_this_month">Este mes</string>
+    <string name="search_filter_this_year">Este año</string>
+    <string name="search_filter_has_media">Tiene multimedia</string>
+    <string name="search_no_results">No se encontraron entradas</string>
 
     <!-- Settings Screen -->
-    <string name="settings_title">Settings</string>
-    <string name="settings_appearance">Appearance</string>
-    <string name="settings_theme">Theme</string>
-    <string name="settings_dark_mode_locked">Dark Mode Locked</string>
-    <string name="settings_dark_mode_progress">Progress</string>
-    <string name="settings_rent_dark_mode">Rent Dark Mode</string>
-    <string name="settings_export">Export</string>
-    <string name="settings_export_json">Export as JSON</string>
-    <string name="settings_export_markdown">Export as Markdown</string>
-    <string name="settings_export_csv">Export as CSV</string>
-    <string name="settings_backup">Backup</string>
-    <string name="settings_backup_now">Backup Now</string>
-    <string name="settings_last_backup">Last Backup</string>
-    <string name="settings_data">Data</string>
-    <string name="settings_clear_all_data">Clear All Data</string>
-    <string name="settings_reset_streak">Reset Streak</string>
-    <string name="settings_clear_confirm">This action cannot be undone. Continue?</string>
-    <string name="settings_about">About</string>
-    <string name="settings_version">Version</string>
-    <string name="settings_privacy">Privacy First — 100% local storage</string>
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_appearance">Apariencia</string>
+    <string name="settings_theme">Tema</string>
+    <string name="settings_dark_mode_locked">Modo Oscuro Bloqueado</string>
+    <string name="settings_dark_mode_progress">Progreso</string>
+    <string name="settings_rent_dark_mode">Alquilar Modo Oscuro</string>
+    <string name="settings_export">Exportar</string>
+    <string name="settings_export_json">Exportar como JSON</string>
+    <string name="settings_export_markdown">Exportar como Markdown</string>
+    <string name="settings_export_csv">Exportar como CSV</string>
+    <string name="settings_backup">Respaldo</string>
+    <string name="settings_backup_now">Respaldar ahora</string>
+    <string name="settings_last_backup">Último respaldo</string>
+    <string name="settings_data">Datos</string>
+    <string name="settings_clear_all_data">Borrar todos los datos</string>
+    <string name="settings_reset_streak">Reiniciar racha</string>
+    <string name="settings_clear_confirm">Esta acción no se puede deshacer. ¿Continuar?</string>
+    <string name="settings_about">Acerca de</string>
+    <string name="settings_version">Versión</string>
+    <string name="settings_privacy">Privacidad primero — 100% almacenamiento local</string>
 
     <!-- Notifications -->
-    <string name="notification_channel_reminders">Daily Reminders</string>
-    <string name="notification_channel_streak">Streak Alerts</string>
-    <string name="notification_channel_achievements">Achievements</string>
-    <string name="notification_morning">🌅 Ready to log today's moments?</string>
-    <string name="notification_evening">📝 5 minutes for today's entry?</string>
-    <string name="notification_desperate">⚠️ Your {streak}-day streak is at risk!</string>
-    <string name="notification_emergency">⏰ LAST CHANCE! 10 seconds saves your streak.</string>
-    <string name="notification_streak_saved">🎉 Streak saved! +{points} points</string>
-    <string name="notification_streak_broken">💔 Streak broken at {streak} days.</string>
-    <string name="notification_achievement">🏆 Achievement Unlocked: {achievement}</string>
+    <string name="notification_channel_reminders">Recordatorios Diarios</string>
+    <string name="notification_channel_streak">Alertas de Racha</string>
+    <string name="notification_channel_achievements">Logros</string>
+    <string name="notification_morning">🌅 ¿Listo para registrar los momentos de hoy?</string>
+    <string name="notification_evening">📝 ¿5 minutos para la entrada de hoy?</string>
+    <string name="notification_desperate">⚠️ ¡Tu racha de %1$d días está en riesgo!</string>
+    <string name="notification_emergency">⏰ ¡ÚLTIMA OPORTUNIDAD! 10 segundos salvan tu racha.</string>
+    <string name="notification_streak_saved">🎉 ¡Racha salvada! +%1$d puntos</string>
+    <string name="notification_streak_broken">💔 Racha rota a los %1$d días.</string>
+    <string name="notification_achievement">🏆 Logro desbloqueado: %1$s</string>
 
     <!-- Errors -->
-    <string name="error_save_failed">Failed to save entry</string>
-    <string name="error_delete_failed">Failed to delete entry</string>
-    <string name="error_export_failed">Export failed</string>
-    <string name="error_backup_failed">Backup failed</string>
-    <string name="error_no_storage_permission">Storage permission required</string>
-    <string name="error_no_location_permission">Location permission required</string>
-    <string name="error_no_microphone_permission">Microphone permission required</string>
-    <string name="error_location_unavailable">Location unavailable</string>
+    <string name="error_save_failed">Error al guardar la entrada</string>
+    <string name="error_delete_failed">Error al eliminar la entrada</string>
+    <string name="error_export_failed">Exportación fallida</string>
+    <string name="error_backup_failed">Respaldo fallido</string>
+    <string name="error_no_storage_permission">Permiso de almacenamiento requerido</string>
+    <string name="error_no_location_permission">Permiso de ubicación requerido</string>
+    <string name="error_no_microphone_permission">Permiso de micrófono requerido</string>
+    <string name="error_location_unavailable">Ubicación no disponible</string>
 
     <!-- Excuse Dialog -->
-    <string name="excuse_title">Missed Yesterday</string>
-    <string name="excuse_message">Write why you couldn't write (unlocks yesterday for 1 hour)</string>
-    <string name="excuse_hint">I was traveling and didn't have my phone...</string>
-    <string name="excuse_honesty_bonus">Honesty earns +5 points</string>
-    <string name="excuse_unlock_button">Unlock Yesterday</string>
-    <string name="excuse_use_freeze">Use Freeze</string>
+    <string name="excuse_title">Ayer se te pasó</string>
+    <string name="excuse_message">Escribe por qué no pudiste escribir (desbloquea ayer por 1 hora)</string>
+    <string name="excuse_hint">Estaba viajando y no tenía mi teléfono...</string>
+    <string name="excuse_honesty_bonus">La honestidad gana +5 puntos</string>
+    <string name="excuse_unlock_button">Desbloquear Ayer</string>
+    <string name="excuse_use_freeze">Usar congelación</string>
 </resources>
