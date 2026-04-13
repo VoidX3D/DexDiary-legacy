@@ -104,13 +104,13 @@ fun DarkModeCard(onBuy: () -> Unit) {
         colors = CardDefaults.cardColors(containerColor = androidx.compose.ui.graphics.Color(0xFF1A1A1A))
     ) {
         Box(modifier = Modifier.fillMaxSize().padding(24.dp)) {
-            Column(modifier = Modifier.align(androidx.compose.ui.`Alignment`.TopStart)) {
+            Column(modifier = Modifier.align(Alignment.TopStart)) {
                 Text("Dark Mode", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = androidx.compose.ui.graphics.Color.White)
                 Text("The final destination.", style = MaterialTheme.typography.bodyMedium, color = androidx.compose.ui.graphics.Color.Gray)
             }
             Button(
                 onClick = onBuy,
-                modifier = Modifier.align(androidx.compose.ui.`Alignment`.BottomEnd),
+                modifier = Modifier.align(Alignment.BottomEnd),
                 colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
             ) {
                 Text("5,000 PTS")

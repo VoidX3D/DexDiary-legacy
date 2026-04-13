@@ -12,26 +12,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
-import com.dexdiary.data.database.dao.AiLogDao
-import com.dexdiary.data.database.entities.AiLog
-import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.SharingStarted
-import kotlinx.coroutines.flow.stateIn
 import androidx.navigation.NavController
-import javax.inject.Inject
-
-@HiltViewModel
-class AiUsageViewModel @Inject constructor(
-    private val aiLogDao: AiLogDao
-) : ViewModel() {
-    val recentLogs = aiLogDao.getRecentLogs().stateIn(
-        viewModelScope,
-        SharingStarted.WhileSubscribed(5000),
-        emptyList()
-    )
-}
+import com.dexdiary.presentation.viewmodel.AiUsageViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

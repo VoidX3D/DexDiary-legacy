@@ -7,6 +7,9 @@ import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 import javax.inject.Singleton
 
+// Type alias defined before use
+typealias BooleanDefault = Boolean
+
 @Singleton
 class ThemeManager @Inject constructor(
     private val shopRepository: ShopRepository
@@ -38,6 +41,3 @@ enum class DexTheme(
     MIDNIGHT("Midnight", "Midnight", 1200, true),
     FROST("Frost", "Frost", 1500, true)
 }
-
-// Helper because I used a typo or just want to be explicit
-typealias BooleanDefault = Boolean

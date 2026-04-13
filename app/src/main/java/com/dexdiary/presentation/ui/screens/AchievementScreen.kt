@@ -12,26 +12,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
-import com.dexdiary.data.database.dao.AchievementDao
-import com.dexdiary.data.database.entities.Achievement
-import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.SharingStarted
-import kotlinx.coroutines.flow.stateIn
 import androidx.navigation.NavController
-import javax.inject.Inject
-
-@HiltViewModel
-class AchievementViewModel @Inject constructor(
-    private val achievementDao: AchievementDao
-) : ViewModel() {
-    val items = achievementDao.getAllAchievements().stateIn(
-        viewModelScope,
-        SharingStarted.WhileSubscribed(5000),
-        emptyList()
-    )
-}
+import com.dexdiary.presentation.viewmodel.AchievementViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
