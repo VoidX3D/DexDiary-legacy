@@ -1,71 +1,82 @@
-# Dex Diary
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![API](https://img.shields.io/badge/API-24%2B-green)
-![License](https://img.shields.io/badge/license-MIT-yellow)
+# 💎 Dex Diary — Gamified Privacy Journaling
 
-**Your life, logged. Your streak, protected. Your dark mode, earned.**
+[![Android Build](https://github.com/VoidX3D/DexDiary/actions/workflows/android.yml/badge.svg)](https://github.com/VoidX3D/DexDiary/actions)
+[![Min API](https://img.shields.io/badge/API-24%2B-brightgreen.svg)](https://android-arsenal.com/api?level=24)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-## Description
-Dex Diary is a privacy-first, offline-only journaling application designed to make writing a daily habit through extreme gamification. Unlike other diary apps, Dex Diary forces accountability: you can only write for **today**. If you miss a day, your streak is at risk unless you use the "Excuse" system to unlock yesterday. 
+> **"Make writing addictive, not forced."**
 
-The ultimate goal? **Dark Mode**. It’s not a setting; it’s a reward that costs 5,000 hard-earned points.
+Dex Diary is an offline-first, privacy-centric Android diary that uses Duolingo-style accountability to help you build a consistent writing habit. With streaks, unlockable premium themes, and an AI-powered "Oracle," it turns your daily reflections into a high-stakes game of self-growth.
 
-## Features
-- **Today-Only Entries**: No backdating. Authenticity is key.
-- **Markdown Support**: Style your thoughts with bold, italics, and lists.
-- **Auto-Save**: Never lose a word; drafts save every 30 seconds.
-- **Streak Multipliers**: Earn 1.5x up to 3x points based on your consistency.
-- **Gamified Progress**: 50+ achievements and a global Hall of Fame.
-- **Premium Shop**: Spend points on Streak Freezes, Themes, and Power-ups.
-- **8 Unlockable Themes**: Sepia, Ocean, Forest, Ember, Midnight, Frost, and the legendary Dark Mode.
-- **Rich Media**: Attach images, voice notes, and locations to your memories.
-- **Privacy First**: 100% local storage. No cloud, no tracking, no ads.
-- **Export Options**: Export your data anytime as JSON, Markdown, or CSV.
-- **Unhinged Notifications**: Duolingo-style reminders that won't let you quit.
+---
 
-## Points Table
-| Action | Points |
-|--------|--------|
-| Write Daily Entry | 10 |
-| 250+ Words | +5 |
-| 500+ Words | +10 |
-| 1000+ Words | +25 |
-| Add Image | +5 |
-| Add Audio | +5 |
-| Add Location | +3 |
-| 7-Day Streak | +50 |
-| 14-Day Streak | +100 |
-| 30-Day Streak | +250 |
-| Perfect Week | +100 |
+## 🚀 Key Features
 
-## Shop Table
-| Item | Cost |
-|------|------|
-| Streak Freeze | 100 |
-| Freeze 3-Pack | 250 |
-| Sepia Theme | 500 |
-| Ocean Theme | 800 |
-| Forest Theme | 800 |
-| Midnight Theme | 1200 |
-| Ember/Frost | 1500 |
-| **Dark Mode** | **5000** |
-| Double Points (24h) | 150 |
-| Streak Shield | 200 |
-| On Fire Badge | 100 |
+### 🎮 Extreme Gamification
+- **The Golden Rule**: You can *only* write for today. Missed a day? Your streak is at risk unless you submit an "Excuse" or use a hard-earned Streak Freeze.
+- **Points & Unlocks**: Earn points for word count, media attachments, and consistency. 
+- **The Ultimate Goal**: Dark Mode isn't a setting—it costs **5,000 points**. You have to earn your right to the shadows.
+- **Hall of Fame**: Unlock 50+ achievements, from "Night Owl" to "Dark Lord."
 
-## Tech Stack
-- **Kotlin**: Primary language.
-- **Jetpack Compose**: Modern declarative UI.
-- **Material 3**: Latest design system.
-- **Room**: Robust local SQLite abstraction.
-- **Hilt**: Dependency injection.
-- **WorkManager**: Reliable background notifications.
-- **Coil**: Image loading.
+### 🧠 AI-Powered Insights
+- **The Oracle**: An AI-driven forecasting engine that predicts your "Vibe" for the next day based on your emotional patterns.
+- **Smart Summaries**: Get poetic, AI-generated summaries of your week (Gemini, Groq, NVIDIA, or OpenRouter).
+- **Text Analytics**: Live word count, reading time estimates, and subtle grammar tips.
 
-## Installation
-1. Clone this repository.
-2. Open in Android Studio (Iguana or newer).
-3. Sync Gradle and run on an emulator or physical device.
+### 🛡️ Privacy & Security
+- **100% Offline**: Your data never leaves your device. No cloud sync, no tracking, no ads.
+- **Biometric Ready**: Secure your logs behind your fingerprint or face.
+- **Local Media**: All images and voice notes are stored in your app's private directory.
 
-## License
-Licensed under the MIT License.
+---
+
+## 🛠️ Tech Stack
+
+- **UI**: Jetpack Compose (Material 3)
+- **Database**: Room (Offline-First Architecture)
+- **Dependency Injection**: Hilt
+- **Background Tasks**: WorkManager (for unhinged notifications)
+- **AI Integration**: Custom provider engine (Gemini, Groq, OpenRouter)
+- **Animations**: Compose Motion Layouts & M3 Micro-animations
+
+---
+
+## 📸 Screenshots
+
+| Home & Streaks | Ultimate Shop | AI Oracle |
+| :---: | :---: | :---: |
+| *[Screenshot 1]* | *[Screenshot 2]* | *[Screenshot 3]* |
+
+*(Coming soon to the Play Store)*
+
+---
+
+## 📥 Installation
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/VoidX3D/DexDiary.git
+   ```
+2. Open the project in **Android Studio (Iguana+)**.
+3. Build and run on an API 24+ device.
+
+**Download APK**: You can download the latest production-ready APK from the [GitHub Actions tab](https://github.com/VoidX3D/DexDiary/actions).
+
+---
+
+## 🤝 Contributing
+
+We love contributions! Whether it's fixing a bug, adding a new notification template, or designing a theme.
+1. Fork the repo.
+2. Create your feature branch.
+3. Submit a PR.
+
+---
+
+## 📜 License
+
+Dex Diary is licensed under the [MIT License](LICENSE).
+
+---
+
+Developed with ❤️ by **VoidX3D** & **Antigravity AI**.
