@@ -29,6 +29,8 @@ fun HomeScreen(
 ) {
     val stats by viewModel.stats.collectAsState()
     val entries by viewModel.recentEntries.collectAsState()
+    val rewardClaimed by viewModel.dailyRewardClaimed.collectAsState()
+    val missions by viewModel.dailyMissions.collectAsState()
     val today = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))
     
     Scaffold(
@@ -67,14 +69,12 @@ fun HomeScreen(
                 )
             }
 
-            val rewardClaimed by viewModel.dailyRewardClaimed.collectAsState()
             if (!rewardClaimed) {
                 item {
                     DailyRewardCard(onClaim = viewModel::claimDailyReward)
                 }
             }
             
-            val missions by viewModel.dailyMissions.collectAsState()
             if (missions.isNotEmpty()) {
                 item {
                     Text(
