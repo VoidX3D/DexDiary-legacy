@@ -2,6 +2,8 @@ package com.dexdiary.presentation.ui.screens
 
 import androidx.compose.animation.*
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Star
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -39,7 +41,7 @@ fun SetupScreen(navController: NavController) {
                             description = "Get summaries and grammar tips locally or via your favorite AI provider."
                         )
                         3 -> SetupStep(
-                            icon = androidx.compose.material.icons.Icons.Default.Star,
+                            icon = Icons.Rounded.Star,
                             title = "Gamified Growth",
                             description = "Earn points, keep streaks, and unlock premium themes like Dark Mode."
                         )

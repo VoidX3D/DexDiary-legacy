@@ -1,4 +1,3 @@
-import androidx.compose.ui.unit.sp
 package com.dexdiary.presentation.ui.screens
 
 import androidx.compose.foundation.layout.*
@@ -12,6 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.dexdiary.presentation.viewmodel.ShopViewModel
@@ -35,7 +35,7 @@ fun ShopScreen(
                 },
                 actions = {
                     Text(
-                        text = "${stats.availablePoints} PTS",
+                        text = "${stats?.availablePoints ?: 0} PTS",
                         modifier = Modifier.padding(end = 16.dp),
                         style = MaterialTheme.typography.titleMedium,
                         fontWeight = FontWeight.Bold,

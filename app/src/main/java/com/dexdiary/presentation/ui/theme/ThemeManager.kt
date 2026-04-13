@@ -7,7 +7,6 @@ import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 import javax.inject.Singleton
 
-// Type alias defined before use
 typealias BooleanDefault = Boolean
 
 @Singleton
@@ -22,8 +21,6 @@ class ThemeManager @Inject constructor(
     }
 
     fun getUnlockedThemes() = shopRepository.getUnlockedThemes()
-    
-    // Theme definitions could be here or in a separate file
 }
 
 enum class DexTheme(

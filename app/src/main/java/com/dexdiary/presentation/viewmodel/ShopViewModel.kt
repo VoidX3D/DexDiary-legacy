@@ -39,10 +39,10 @@ class ShopViewModel @Inject constructor(
 
     fun buyItem(itemId: String, cost: Int, isPermanent: Boolean = false) {
         val currentStats = stats.value
-        if (currentStats.availablePoints >= cost) {
+        if ((currentStats?.availablePoints ?: 0) >= cost) {
             viewModelScope.launch {
                 statsRepository.updateStats(currentStats.copy(
-                    availablePoints = currentStats.availablePoints - cost
+                    availablePoints = (currentStats?.availablePoints ?: 0) - cost
                 ))
 
                 if (isPermanent) {

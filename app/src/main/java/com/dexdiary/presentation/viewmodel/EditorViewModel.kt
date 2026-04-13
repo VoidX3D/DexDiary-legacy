@@ -19,6 +19,7 @@ import com.dexdiary.domain.RewardManager
 import com.dexdiary.domain.StreakManager
 import com.dexdiary.domain.TextAnalyzer
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -148,8 +149,8 @@ class EditorViewModel @Inject constructor(
                 ))
             }
             
-            // Update Missions
-            rewardRepository.getMissionsForDate(entryDate).first().forEach { mission ->
+            val missions = rewardRepository.getMissionsForDate(entryDate).first()
+            missions.forEach { mission: com.dexdiary.data.database.entities.DailyMission ->
                 var updatedMission = mission
                 when (mission.missionType) {
                     "word_count" -> {

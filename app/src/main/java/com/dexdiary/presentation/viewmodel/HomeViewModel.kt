@@ -45,7 +45,6 @@ class HomeViewModel @Inject constructor(
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
 
     init {
-        // Initialize stats if empty
         viewModelScope.launch {
             if (statsRepository.getStatsSync() == null) {
                 statsRepository.insertStats(UserStats())
@@ -54,11 +53,9 @@ class HomeViewModel @Inject constructor(
             val today = LocalDate.now().format(formatter)
             _dailyRewardClaimed.value = rewardRepository.getRewardForDate(today) != null
             
-            // Generate missions if needed
-            rewardRepository.getMissionsForDate(today).first().let { 
-                if (it.isEmpty()) {
-                    rewardRepository.insertMissions(rewardManager.generateDailyMissions())
-                }
+            val missionsToday = rewardRepository.getMissionsForDate(today).first()
+            if (missionsToday.isEmpty()) {
+                rewardRepository.insertMissions(rewardManager.generateDailyMissions())
             }
         }
     }
