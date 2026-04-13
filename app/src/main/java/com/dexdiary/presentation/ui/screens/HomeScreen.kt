@@ -100,7 +100,7 @@ fun HomeScreen(
                 EntryCard(
                     entry = entry,
                     onEditClick = { navController.navigate(Screen.Editor.createRoute(entry.date)) },
-                    onLongClick = { /* Show options dialog */ }
+                    onLongClick = { }
                 )
             }
             
@@ -221,4 +221,5 @@ fun MissionCard(mission: com.dexdiary.data.database.entities.DailyMission) {
             }
         }
     }
+}
 }
