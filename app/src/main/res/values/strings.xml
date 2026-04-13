@@ -7,7 +7,7 @@
     <string name="home_streak">Streak</string>
     <string name="home_points">Points</string>
     <string name="home_freezes">Freezes</string>
-    <string name="home_write_today">Write Today's Entry</string>
+    <string name="home_write_today">Write Today\'s Entry</string>
     <string name="home_today">Today</string>
     <string name="home_yesterday">Yesterday</string>
     <string name="home_locked">Locked</string>
@@ -35,8 +35,8 @@
     <string name="points_total">Total Points</string>
     <string name="points_next_milestone">Next Milestone</string>
     <string name="points_dark_mode_goal">Dark Mode Unlock</string>
-    <string name="points_today_potential">Today's Potential</string>
-    <string name="points_today_breakdown">Today's Breakdown</string>
+    <string name="points_today_potential">Today\'s Potential</string>
+    <string name="points_today_breakdown">Today\'s Breakdown</string>
     <string name="points_base_entry">Base entry</string>
     <string name="points_word_bonus">Word bonus</string>
     <string name="points_image_bonus">Image bonus</string>
@@ -57,8 +57,8 @@
     <string name="shop_badges">Badges</string>
     <string name="shop_buy">Buy</string>
     <string name="shop_rent">Rent for 7 days</string>
-    <string name="shop_purchase_confirm">Buy {item} for {cost} points?</string>
-    <string name="shop_rent_confirm">Rent {item} for 7 days for {cost} points?</string>
+    <string name="shop_purchase_confirm">Buy %1$s for %2$d points?</string>
+    <string name="shop_rent_confirm">Rent %1$s for 7 days for %2$d points?</string>
     <string name="shop_not_enough_points">Not enough points</string>
     <string name="shop_purchase_success">Purchase successful!</string>
     <string name="shop_dark_mode_progress">Points until Dark Mode</string>
@@ -102,13 +102,13 @@
     <string name="notification_channel_reminders">Daily Reminders</string>
     <string name="notification_channel_streak">Streak Alerts</string>
     <string name="notification_channel_achievements">Achievements</string>
-    <string name="notification_morning">🌅 Ready to log today's moments?</string>
-    <string name="notification_evening">📝 5 minutes for today's entry?</string>
-    <string name="notification_desperate">⚠️ Your {streak}-day streak is at risk!</string>
+    <string name="notification_morning">🌅 Ready to log today\'s moments?</string>
+    <string name="notification_evening">📝 5 minutes for today\'s entry?</string>
+    <string name="notification_desperate">⚠️ Your %1$d-day streak is at risk!</string>
     <string name="notification_emergency">⏰ LAST CHANCE! 10 seconds saves your streak.</string>
-    <string name="notification_streak_saved">🎉 Streak saved! +{points} points</string>
-    <string name="notification_streak_broken">💔 Streak broken at {streak} days.</string>
-    <string name="notification_achievement">🏆 Achievement Unlocked: {achievement}</string>
+    <string name="notification_streak_saved">🎉 Streak saved! +%1$d points</string>
+    <string name="notification_streak_broken">💔 Streak broken at %1$d days.</string>
+    <string name="notification_achievement">🏆 Achievement Unlocked: %1$s</string>
 
     <!-- Errors -->
     <string name="error_save_failed">Failed to save entry</string>
@@ -122,8 +122,8 @@
 
     <!-- Excuse Dialog -->
     <string name="excuse_title">Missed Yesterday</string>
-    <string name="excuse_message">Write why you couldn't write (unlocks yesterday for 1 hour)</string>
-    <string name="excuse_hint">I was traveling and didn't have my phone...</string>
+    <string name="excuse_message">Write why you couldn\'t write (unlocks yesterday for 1 hour)</string>
+    <string name="excuse_hint">I was traveling and didn\'t have my phone...</string>
     <string name="excuse_honesty_bonus">Honesty earns +5 points</string>
     <string name="excuse_unlock_button">Unlock Yesterday</string>
     <string name="excuse_use_freeze">Use Freeze</string>
