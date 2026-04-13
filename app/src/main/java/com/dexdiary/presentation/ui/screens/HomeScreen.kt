@@ -61,8 +61,8 @@ fun HomeScreen(
         ) {
             item {
                 StreakCard(
-                    streak = stats.currentStreak,
-                    points = stats.availablePoints,
+                    streak = stats?.currentStreak ?: 0,
+                    points = stats?.availablePoints ?: 0,
                     onPointsClick = { navController.navigate(Screen.Points.route) }
                 )
             }
@@ -200,35 +200,24 @@ fun MissionCard(mission: com.dexdiary.data.database.entities.DailyMission) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(vertical = 4.dp),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)
+            .padding(vertical = 8.dp)
     ) {
         Row(
             modifier = Modifier.padding(16.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
             Column(modifier = Modifier.weight(1f)) {
-                Text(text = mission.title, fontWeight = FontWeight.Bold)
+                Text(text = mission.title, style = MaterialTheme.typography.titleSmall, fontWeight = FontWeight.Bold)
                 Text(text = mission.description, style = MaterialTheme.typography.bodySmall)
-                Spacer(modifier = Modifier.height(8.dp))
                 LinearProgressIndicator(
-                    progress = if (mission.targetCount > 0) mission.currentCount.toFloat() / mission.targetCount else 0f,
-                    modifier = Modifier.fillMaxWidth().height(4.dp),
-                    color = MaterialTheme.colorScheme.primary,
-                    trackColor = MaterialTheme.colorScheme.surface
+                    progress = (mission.currentCount.toFloat() / mission.targetCount).coerceIn(0f, 1f),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(top = 8.dp)
                 )
             }
-            Spacer(modifier = Modifier.width(16.dp))
-            Surface(
-                color = MaterialTheme.colorScheme.primary,
-                shape = MaterialTheme.shapes.small
-            ) {
-                Text(
-                    text = "+${mission.rewardPoints}",
-                    modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp),
-                    style = MaterialTheme.typography.labelMedium,
-                    color = Color.White
-                )
+            if (mission.isCompleted) {
+                Icon(Icons.Default.CheckCircle, contentDescription = "Completed")
             }
         }
     }

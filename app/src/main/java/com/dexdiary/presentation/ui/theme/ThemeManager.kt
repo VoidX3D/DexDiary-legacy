@@ -28,7 +28,7 @@ class ThemeManager @Inject constructor(
 
 enum class DexTheme(
     val id: String,
-    val name: String,
+    val displayName: String,
     val cost: Int,
     val isLocked: BooleanDefault = true
 ) {
